@@ -8,6 +8,9 @@ import { motion, useAnimation, useInView } from "framer-motion"
 import Tooltip from "@/components/tooltip"
 import { ReactNode } from "react";
 import Header from "@/components/header"
+import AnimatedSection from "@/components/animatedsection"
+import Footer from "@/components/footer"
+
 
 // Animation variants
 const fadeIn = {
@@ -30,23 +33,6 @@ const staggerContainer = {
 }
 
 
-function AnimatedSection({ children, className = "" }: { children: ReactNode, className?: string }) {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
-
-  return (
-    <motion.div ref={ref} initial="hidden" animate={controls} variants={fadeIn} className={className}>
-      {children}
-    </motion.div>
-  )
-}
 
 export default function AboutUs() {
   return (
@@ -232,222 +218,10 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image src="/placeholder.svg?height=64&width=64" alt="Renal Evaluation" width={64} height={64} />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Comprehensive Renal Evaluation & Monitoring</h3>
-                <p className="text-gray-600">
-                  Early diagnosis and ongoing assessment for conditions like AKI, CKD, diabetic nephropathy, and other
-                  kidney disorders.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image src="/placeholder.svg?height=64&width=64" alt="Dialysis Management" width={64} height={64} />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Personalized Dialysis Management</h3>
-                <p className="text-gray-600">
-                  Tailored hemodialysis and peritoneal dialysis programs to meet each patient's unique needs.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image src="/placeholder.svg?height=64&width=64" alt="Transplant Care" width={64} height={64} />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Kidney Transplant Care</h3>
-                <p className="text-gray-600">
-                  Coordinated evaluation, surgical referral, and post-transplant management to enhance long-term kidney
-                  function.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image src="/placeholder.svg?height=64&width=64" alt="Nephropathy Treatment" width={64} height={64} />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Advanced Nephropathy Treatment</h3>
-                <p className="text-gray-600">
-                  Delivering an approach including immunosuppressive regimens, specific anti-inflammatory therapies, and
-                  metabolic control—such as blood sugar and blood pressure management—to precisely address
-                  glomerulonephritis, nephrotic syndrome, and diabetic kidney disease.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Interventional Nephrology"
-                    width={64}
-                    height={64}
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Interventional Nephrology Services</h3>
-                <p className="text-gray-600">
-                  Minimally invasive procedures for conditions such as renal artery stenosis and targeted treatments
-                  including plasmapheresis.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-16 h-16 mb-4 mx-auto md:mx-0">
-                  <Image src="/placeholder.svg?height=64&width=64" alt="Clinical Research" width={64} height={64} />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Innovative Clinical Research & Therapeutic Access</h3>
-                <p className="text-gray-600">
-                  Patients seeking clinical trial options will be referred to Valiance Clinical Research to access novel
-                  therapies, particularly for complex conditions like polycystic kidney disease (PKD).
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
-      <footer className="bg-white pt-16 pb-8">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            <AnimatedSection>
-              <Image
-                src="/placeholder.svg?height=60&width=180"
-                alt="Valley Kidney Care Logo"
-                width={180}
-                height={60}
-                className="h-14 w-auto mb-6"
-              />
-              <p className="text-gray-600 mb-4">
-                Providing exceptional kidney care for patients throughout the Los Angeles area since 2010.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                  <Twitter className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                  <Linkedin className="h-6 w-6" />
-                </a>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <h6 className="font-bold mb-4 text-lg">Quick Links</h6>
-              <ul className="space-y-3">
-                <li>
-                  <Link href="/about-us" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/doctors" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Doctors
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact-us" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Contact
-                  </Link>
-                </li>
-              </ul>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <h6 className="font-bold mb-4 text-lg">Resources</h6>
-              <ul className="space-y-3">
-                <li>
-                  <Link href="/resources" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Patient Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/insurance" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Insurance
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/faq" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="text-gray-600 hover:text-primary transition-colors duration-300">
-                    <span className="text-primary mr-2">→</span> Privacy Policy
-                  </Link>
-                </li>
-              </ul>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <h6 className="font-bold mb-4 text-lg">Contact Information</h6>
-              <div className="space-y-4">
-                <div>
-                  <h6 className="font-medium mb-2">CALL US</h6>
-                  <p className="text-lg mb-1 flex items-center">
-                    <Phone className="h-4 w-4 mr-2 text-primary" />
-                    (818) 488-1840
-                  </p>
-                </div>
-
-                <div>
-                  <h6 className="font-medium mb-2">FAX</h6>
-                  <p className="text-lg mb-1">(818) 975-5446</p>
-                </div>
-
-                <div>
-                  <h6 className="font-medium mb-2">EMAIL</h6>
-                  <p className="text-lg mb-1">contact@valleykidneycare.com</p>
-                </div>
-
-                <div>
-                  <h6 className="font-medium mb-2">ADDRESS</h6>
-                  <p className="text-lg mb-1 flex items-start">
-                    <MapPin className="h-4 w-4 mr-2 mt-1 text-primary flex-shrink-0" />
-                    <span>
-                      18350 Roscoe Blvd, Suite 512
-                      <br />
-                      Northridge, CA 91325
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <div className="border-t border-gray-200 pt-8 text-center">
-            <p className="text-gray-600">© {new Date().getFullYear()} Valley Kidney Care. All Rights Reserved.</p>
-            <p className="text-gray-500 text-sm mt-2">Website deadline: 3/5/2025</p>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }
