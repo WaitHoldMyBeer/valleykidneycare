@@ -121,7 +121,7 @@ export default function ContactUs() {
                     <div>
                       <h3 className="font-bold text-lg">Our Location</h3>
                       <p className="text-gray-600">
-                        18350 Roscoe Blvd, Suite 512
+                        17075 Devonshire St, Suite 303
                         <br />
                         Northridge, CA 91325
                       </p>
@@ -308,9 +308,9 @@ export default function ContactUs() {
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="bg-white p-4 rounded-lg shadow-lg max-w-md pointer-events-auto">
                   <h3 className="font-bold text-lg mb-2">Valley Kidney Care</h3>
-                  <p className="text-gray-600 mb-4">18350 Roscoe Blvd, Suite 512, Northridge, CA 91325</p>
+                  <p className="text-gray-600 mb-4">17075 Devonshire St, Suite 303, Northridge, CA 91325</p>
                   <a
-                    href="https://maps.google.com/?q=18350+Roscoe+Blvd+Suite+512+Northridge+CA+91325"
+                    href="https://maps.google.com/?q=17075+Devonshire+St+Suite+303+Northridge+CA+91325"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors duration-300"

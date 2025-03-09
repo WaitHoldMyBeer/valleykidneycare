@@ -253,6 +253,169 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <h2 className="text-3xl font-bold text-center mb-12">Our Affiliations</h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Hospital Affiliations */}
+            <AnimatedSection>
+              <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-primary/10 p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2">Hospital Affiliations</h3>
+                  <p className="text-gray-700">
+                    We work closely with these leading hospitals to provide comprehensive care.
+                  </p>
+                </div>
+                <div className="p-6">
+                  <ul className="space-y-4">
+                    <li className="flex items-center p-3 bg-white rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-3 rounded-full mr-4">
+                        <Image
+                          src="/placeholder.svg?height=40&width=40"
+                          alt="Hospital"
+                          width={40}
+                          height={40}
+                          className="h-6 w-6"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="font-bold">Northridge Hospital Medical Center</h4>
+                        <p className="text-sm text-gray-600">18300 Roscoe Blvd, Northridge, CA 91325</p>
+                      </div>
+                    </li>
+                    <li className="flex items-center p-3 bg-white rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-3 rounded-full mr-4">
+                        <Image
+                          src="/placeholder.svg?height=40&width=40"
+                          alt="Hospital"
+                          width={40}
+                          height={40}
+                          className="h-6 w-6"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="font-bold">Valley Presbyterian Hospital</h4>
+                        <p className="text-sm text-gray-600">15107 Vanowen St, Van Nuys, CA 91405</p>
+                      </div>
+                    </li>
+                    <li className="flex items-center p-3 bg-white rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-3 rounded-full mr-4">
+                        <Image
+                          src="/placeholder.svg?height=40&width=40"
+                          alt="Hospital"
+                          width={40}
+                          height={40}
+                          className="h-6 w-6"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="font-bold">Mission Community Hospital</h4>
+                        <p className="text-sm text-gray-600">14850 Roscoe Blvd, Panorama City, CA 91402</p>
+                      </div>
+                    </li>
+                    <li className="flex items-center p-3 bg-white rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-3 rounded-full mr-4">
+                        <Image
+                          src="/placeholder.svg?height=40&width=40"
+                          alt="Hospital"
+                          width={40}
+                          height={40}
+                          className="h-6 w-6"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="font-bold">Providence Holy Cross Medical Center</h4>
+                        <p className="text-sm text-gray-600">15031 Rinaldi St, Mission Hills, CA 91345</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Dialysis Unit Affiliations */}
+            <AnimatedSection>
+              <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-primary/10 p-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2">Dialysis Unit Affiliations</h3>
+                  <p className="text-gray-700">
+                    We partner with these dialysis centers to ensure quality care for our patients.
+                  </p>
+                </div>
+                <div className="p-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="bg-white p-4 rounded-lg shadow-sm flex items-center transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-2 rounded-full mr-3">
+                        <Image
+                          src="/placeholder.svg?height=32&width=32"
+                          alt="Dialysis"
+                          width={32}
+                          height={32}
+                          className="h-5 w-5"
+                        />
+                      </div>
+                      <span className="font-medium">Davita Dialysis Center</span>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg shadow-sm flex items-center transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-2 rounded-full mr-3">
+                        <Image
+                          src="/placeholder.svg?height=32&width=32"
+                          alt="Dialysis"
+                          width={32}
+                          height={32}
+                          className="h-5 w-5"
+                        />
+                      </div>
+                      <span className="font-medium">Fresenius Dialysis Center</span>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg shadow-sm flex items-center transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-2 rounded-full mr-3">
+                        <Image
+                          src="/placeholder.svg?height=32&width=32"
+                          alt="Dialysis"
+                          width={32}
+                          height={32}
+                          className="h-5 w-5"
+                        />
+                      </div>
+                      <span className="font-medium">Sylmar Dialysis Center</span>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg shadow-sm flex items-center transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-2 rounded-full mr-3">
+                        <Image
+                          src="/placeholder.svg?height=32&width=32"
+                          alt="Dialysis"
+                          width={32}
+                          height={32}
+                          className="h-5 w-5"
+                        />
+                      </div>
+                      <span className="font-medium">US Renal Dialysis Center</span>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg shadow-sm flex items-center transition-transform hover:scale-[1.02]">
+                      <div className="bg-primary/10 p-2 rounded-full mr-3">
+                        <Image
+                          src="/placeholder.svg?height=32&width=32"
+                          alt="Dialysis"
+                          width={32}
+                          height={32}
+                          className="h-5 w-5"
+                        />
+                      </div>
+                      <span className="font-medium">Northridge Dialysis Center</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+      
       {/* Services Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

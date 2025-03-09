@@ -17,7 +17,7 @@ export default function Footer() {
                 className="h-14 w-auto mb-6"
               />
               <p className="text-gray-600 mb-4">
-                Providing exceptional kidney care for patients throughout the Los Angeles area since 2010.
+                Providing exceptional kidney care for patients throughout the Los Angeles area since 2013.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-600 hover:text-primary transition-colors duration-300">
@@ -102,7 +102,7 @@ export default function Footer() {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 mr-2 text-primary flex-shrink-0 mt-0.5" />
                   <span>
-                    18350 Roscoe Blvd, Suite 512
+                    17075 Devonshire St, Suite 303
                     <br />
                     Northridge, CA 91325
                   </span>

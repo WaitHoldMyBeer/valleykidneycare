@@ -49,9 +49,9 @@ const services = [
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    title: "Interventional Nephrology Services",
+    title: "Genetic Counseling",
     description:
-      "Minimally invasive procedures for conditions such as renal artery stenosis and targeted treatments including plasmapheresis.",
+      "Informative genetic counseling for patients with inherited kidney diseases, such as polycystic kidney disease (PKD) and Alport syndrome.",
     image: "/placeholder.svg?height=300&width=400",
   },
   {

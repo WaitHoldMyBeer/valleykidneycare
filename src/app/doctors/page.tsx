@@ -110,8 +110,7 @@ export default function Doctors() {
                 <h4 className="text-xl font-bold">Desiree Joy Que</h4>
                 <h6 className="text-primary font-medium mb-4">FNP-C</h6>
                 <p className="text-gray-600 mb-4">
-                  Family Nurse Practitioner specialized in nephrology and patient education with over 10 years of
-                  experience in internal medicine and nephrology care.
+                Desiree Joy brings extensive experience in dialysis nursing and has been an integral part of Valley Kidney Care for over 7 years, demonstrating commitment and excellence in renal patient care. She earned her master's degree in Family Practice Nursing while simultaneously fulfilling her role as an MDS coordinator at Longwood Management Corporation, showcasing her strong multitasking and clinical management skills. Her professional experience extends to Telemetry, enhancing her expertise in patient monitoring and acute care. Additionally, she is a dedicated registered nurse with Vitas, further highlighting her versatility and dedication to comprehensive patient-centered healthcare.
                 </p>
                 <div className="flex justify-center space-x-4">
                   <a href="#" className="text-gray-600 hover:text-primary transition-colors duration-300">
